@@ -23,6 +23,16 @@
             ],
             "source": "clean.R",
             "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "newPrt",
+                    "type": "csv"
+                }
+            ],
+            "source": "data.csv",
+            "target": "subset1.R"
         }
     ],
     "nodes": [
@@ -40,6 +50,6 @@
             "name": "subset1.R"
         }
     ],
-    "updated_at": "2018-09-27 15:27:17",
+    "updated_at": "2018-09-27 15:31:41",
     "url": "https://github.com/fall2018-saltz/ay_project1"
 }
