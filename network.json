@@ -1,0 +1,55 @@
+{
+    "collaborators": [
+        "yash"
+    ],
+    "created_at": "2018-09-27 15:13:46",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "raw_data.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "clean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "newPrt",
+                    "type": "csv"
+                }
+            ],
+            "source": "data.csv",
+            "target": "subset1.R"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "raw_data.csv"
+        },
+        {
+            "name": "clean.R"
+        },
+        {
+            "name": "data.csv"
+        },
+        {
+            "desc": "",
+            "name": "subset1.R"
+        }
+    ],
+    "updated_at": "2018-09-27 15:35:02",
+    "url": "https://github.com/fall2018-saltz/ay_project1"
+}
